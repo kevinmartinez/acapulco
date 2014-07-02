@@ -3,3 +3,8 @@ html {
 	background-attachment: fixed;
 	margin: 0;
 }
+
+header {
+	background: green;
+	height: 150px;
+}
