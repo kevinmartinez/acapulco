@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/offcanvas.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script type="text/javascript" src="//use.typekit.net/klp7xqb.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <!--  Some styling for the speed  -->
         <style>
             .box {
@@ -19,6 +22,10 @@
                 border: 1px solid black;
               color: black;
               padding: 15px 0 15px 0
+            }
+            
+            .fixed-top {
+            position: fixed;
             }
         </style>
 
@@ -31,6 +38,8 @@
 
 	<header id="top" role="banner">
 		<div class="block">
+            
+ 
 
 			<a class="nav-btn" id="nav-open-btn" href="#nav">Book Navigation</a>
 		</div>
@@ -74,8 +83,21 @@
 			<a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
 		</div>
 	</nav>
+
 	<!-- Navigation Ends -->
 	<div id="main" role="main">
+        
+        <div class="frame">
+        <div class="bit-1">
+                        		<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Sök på rättens namn eller ingredienser..." type="text" value="" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"></span>
+						</form>
+					</div>
+            </div>
+        </div>
 
 <!--    Logo    -->
         <div class="frame">
@@ -902,5 +924,10 @@
 </div>
 <!--/#outer-wrap-->
 	<script src="js/main.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
+        new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
 	</body>
 </html>
