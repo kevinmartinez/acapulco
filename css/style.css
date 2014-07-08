@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(#3A9AF2, #EEE9E9);
+	background: #3A9AF2;
 	background-attachment: fixed;
 	margin: 0;
     height: 100%;
@@ -27,8 +27,22 @@ body {
   max-width: 768px;
 }
 
+.main-footer {
+    background: green;
+    border: none;
+    padding: 25px 0 15px !important;
+}
+
 @media screen and (min-width: 768px) {
-	.logo {
+
+body {
+	background: linear-gradient(#3A9AF2, #EEE9E9);
+	background-attachment: fixed;
+	margin: 0;
+    height: 100%;
+}	
+    
+.logo {
 		max-width: 440px;
 		margin: 25px auto 0;
 	}
@@ -72,19 +86,4 @@ body {
         max-width: 1600px;
     }
     
-}
-
-@media screen and (min-width : 768px) and (max-width : 1400px) {
-        .frame {
-            background: red;
-    }
-    
-    #nav li a {
-        display: block;
-        color: #fff;
-        font-size: 1em;
-        line-height: 1.28571em;
-        font-weight: bold;
-        outline: none;
-    }
 }

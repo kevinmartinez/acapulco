@@ -3,10 +3,10 @@
  *  Copyright (c) David Bushell | http://dbushell.com/
  *
  */
-(function(window, document, undefined)
+(function (window, document, undefined)
 {
 
-    window.App = (function()
+    window.App = (function ()
     {
 
         var _init = false, app = { };
